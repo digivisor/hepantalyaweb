@@ -3795,8 +3795,10 @@ p {
     .hero-phone {
         width: 75rem;
         top: 45rem;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     .headline-h1 {
         font-size: 10.66rem;
