@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<!-- Privacy Page -->
+<html lang="tr" data-wf-site="672f0d4d7f4c51f604c1a912">
+<head>
+  <meta charset="utf-8" />
+  <title>HepAntalya - Gizlilik Politikası</title>
+  <meta content="HepAntalya Gizlilik Politikası" name="description" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="webflow.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Urbanist:100,200,300,regular,500,600,700,800,900"],
+      },
+    });
+  </script>
+  <style>
+    * {
+      font-family: "Urbanist", sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #222222;
+      margin: 0;
+      padding: 0;
+    }
+
+    .page-wrapper {
+      width: 100%;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    @media (max-width: 991px) {
+      .container {
+        padding: 0 20px;
+      }
+    }
+
+    @media (max-width: 479px) {
+      .container {
+        padding: 0 15px;
+      }
+    }
+
+    main {
+      width: 100%;
+    }
+
+    .privacy-section {
+      padding: 60px 0;
+      border-bottom: 1px solid #E5E5E5;
+    }
+
+    .privacy-section:last-child {
+      border-bottom: none;
+    }
+
+    .privacy-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #222222;
+      margin: 0 0 30px 0;
+      line-height: 1.2;
+    }
+
+    .privacy-section h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #222222;
+      margin: 30px 0 15px 0;
+    }
+
+    .privacy-section p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #555;
+      margin: 15px 0;
+    }
+
+    .privacy-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+    }
+
+    .privacy-section li {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: #555;
+      margin: 12px 0;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .privacy-section li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #222222;
+      font-weight: bold;
+    }
+
+    .privacy-header-section {
+      padding: 80px 0 60px 0;
+      background: #ffffff;
+      text-align: center;
+      border-bottom: 1px solid #E5E5E5;
+    }
+
+    .privacy-header-section h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #222222;
+      margin: 0 0 20px 0;
+      letter-spacing: -0.5px;
+    }
+
+    .privacy-header-section .subtitle {
+      font-size: 1.2rem;
+      color: #666;
+      margin: 10px 0;
+      font-weight: 400;
+    }
+
+    .privacy-toc {
+      background: #FAFAFA;
+      border-radius: 12px;
+      padding: 50px;
+      margin: 60px 0;
+    }
+
+    .privacy-toc h2 {
+      font-size: 1.5rem;
+      color: #222222;
+      font-weight: 700;
+      margin: 0 0 30px 0;
+    }
+
+    .privacy-toc ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin: 0;
+    }
+
+    @media (max-width: 767px) {
+      .privacy-toc ul {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .privacy-toc li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .privacy-toc li:before {
+      display: none;
+    }
+
+    .privacy-toc a {
+      color: #222222;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    .privacy-toc a:hover {
+      transform: translateX(5px);
+      text-decoration: underline;
+    }
+
+    .intro-notice {
+      background: #f5f5f5;
+      border-left: 5px solid #222222;
+      padding: 30px;
+      border-radius: 8px;
+      margin: 40px 0;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .intro-notice strong {
+      color: #222222;
+      font-weight: 600;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #222222;
+      text-decoration: none;
+      font-weight: 500;
+      margin-bottom: 40px;
+      transition: all 0.3s ease;
+    }
+
+    .back-link:hover {
+      gap: 12px;
+    }
+
+    @media (max-width: 479px) {
+      .privacy-header-section {
+        padding: 40px 0 30px 0;
+      }
+
+      .privacy-header-section h1 {
+        font-size: 2rem;
+      }
+
+      .privacy-section {
+        padding: 40px 0;
+      }
+
+      .privacy-section h2 {
+        font-size: 1.5rem;
+      }
+
+      .privacy-toc {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <a href="index.html" class="back-link" style="padding: 20px 40px 0 40px; display: block;">
+      <span>←</span> Ana Sayfaya Dön
+    </a>
+
+    <section class="privacy-header-section">
+      <div class="container">
+        <h1>Gizlilik Politikası</h1>
+        <p class="subtitle">Son Güncelleme: 11 Haziran 2025</p>
+        <p class="subtitle" style="color: #999; font-size: 0.95rem;">Yürürlük Tarihi: 11 Haziran 2025</p>
+      </div>
+    </section>
+
+    <main>
+      <div class="container">
+        <div class="intro-notice">
+          <strong>Digivisor Growth Agency</strong> olarak, HepAntalya mobil uygulaması aracılığıyla kişisel verilerinizin korunması konusunda hassasiyetimizi ve bu konudaki yasal yükümlülüklerimizi bilir, gizliliğinize olan saygımızı sunar ve verilerinizi korumak için çaba gösteririz.
+        </div>
+
+        <div class="privacy-toc">
+          <h2>İçindekiler</h2>
+          <ul>
+            <li><a href="#giris">1. Giriş</a></li>
+            <li><a href="#toplanan">2. Toplanan Kişisel Veriler</a></li>
+            <li><a href="#toplama">3. Veri Toplama Yöntemleri</a></li>
+            <li><a href="#isleme">4. Veri İşleme Amaçları</a></li>
+            <li><a href="#hukuki">5. Hukuki Dayanak</a></li>
+            <li><a href="#paylasim">6. Veri Paylaşımı</a></li>
+            <li><a href="#guvenlik">7. Veri Güvenliği</a></li>
+            <li><a href="#haklar">8. Haklarınız</a></li>
+            <li><a href="#saklama">9. Veri Saklama Süreleri</a></li>
+            <li><a href="#cerezler">10. Çerezler</a></li>
+            <li><a href="#transfer">11. Uluslararası Veri Transferi</a></li>
+            <li><a href="#cocuklar">12. Çocukların Gizliliği</a></li>
+            <li><a href="#degisiklik">13. Politika Değişiklikleri</a></li>
+            <li><a href="#iletisim">14. İletişim</a></li>
+            <li><a href="#yasal">15. Yasal Çerçeve</a></li>
+          </ul>
+        </div>
+
+        <section class="privacy-section" id="giris">
+          <h2>1. Giriş</h2>
+          <p>Bu Gizlilik Politikası, HepAntalya mobil uygulamasını ("Uygulama") kullanırken toplanan, işlenen ve korunan kişisel veriler hakkında sizi bilgilendirmek amacıyla hazırlanmıştır. Bu politika, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") ve ilgili mevzuat uyarınca düzenlenmiştir.</p>
+          <h3>Veri Sorumlusu</h3>
+          <ul>
+            <li><strong>Şirket:</strong> Digivisor Growth Agency</li>
+            <li><strong>Adres:</strong> Antalya, Türkiye</li>
+            <li><strong>E-posta:</strong> digivisoragency@gmail.com</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section" id="toplanan">
+          <h2>2. Toplanan Kişisel Veriler</h2>
+          <h3>2.1 Kimlik ve İletişim Bilgileri</h3>
+          <ul>
+            <li>Ad, soyad, doğum tarihi</li>
+            <li>E-posta adresi, telefon numarası</li>
+            <li>Profil fotoğrafı</li>
+            <li>Kullanıcı adı ve şifre</li>
+          </ul>
+          <h3>2.2 Konum Verileri</h3>
+          <ul>
+            <li>Gerçek zamanlı konum bilgileri (GPS koordinatları)</li>
+            <li>Ev/iş adresi bilgileri</li>
+            <li>Etkinlik ve mekan konumları</li>
+            <li>Harita üzerindeki etkileşim verileri</li>
+          </ul>
+          <h3>2.3 Finansal ve Ödeme Bilgileri</h3>
+          <ul>
+            <li>HepAntalya dijital cüzdan bakiyesi</li>
+            <li>İşlem geçmişi ve ödeme kayıtları</li>
+            <li>Banka kartı bilgileri (güvenli ödeme sağlayıcıları aracılığıyla)</li>
+            <li>QR kod ödeme işlemleri</li>
+            <li>Fatura ve teslimat adresleri</li>
+          </ul>
+          <h3>2.4 Sosyal ve İçerik Verileri</h3>
+          <ul>
+            <li>Paylaştığınız gönderiler, fotoğraflar ve videolar</li>
+            <li>Yorumlar ve beğeniler</li>
+            <li>Hikaye içerikleri</li>
+            <li>Etkinlik katılımları</li>
+            <li>Takip ettiğiniz yerler ve kullanıcılar</li>
+          </ul>
+          <h3>2.5 Teknik Veriler</h3>
+          <ul>
+            <li>Cihaz kimlik bilgileri (IMEI, MAC adresi)</li>
+            <li>IP adresi ve internet sağlayıcı bilgileri</li>
+            <li>İşletim sistemi ve uygulama versiyonu</li>
+            <li>Uygulama kullanım istatistikleri</li>
+            <li>Çökme raporları ve hata logları</li>
+          </ul>
+          <h3>2.6 Kamera ve Medya Verileri</h3>
+          <ul>
+            <li>Çekilen fotoğraf ve videolar</li>
+            <li>QR kod tarama verileri</li>
+            <li>Galeri erişim kayıtları</li>
+            <li>Mikrofon kayıtları (ses içerikleri için)</li>
+          </ul>
+          <h3>2.7 İşletme Bilgileri</h3>
+          <ul>
+            <li>Şirket unvanı ve vergi numarası</li>
+            <li>İş adresi ve iletişim bilgileri</li>
+            <li>Menü ve hizmet bilgileri</li>
+            <li>Müşteri sadakat programı verileri</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section" id="toplama">
+          <h2>3. Veri Toplama Yöntemleri</h2>
+          <h3>3.1 Doğrudan Toplama</h3>
+          <ul>
+            <li>Hesap oluşturma ve profil kurulumu</li>
+            <li>Form doldurma işlemleri</li>
+            <li>Manuel veri girişleri</li>
+          </ul>
+          <h3>3.2 Otomatik Toplama</h3>
+          <ul>
+            <li>Uygulama kullanımı sırasında otomatik log kayıtları</li>
+            <li>Konum servisleri aracılığıyla</li>
+            <li>Çerezler ve benzeri teknolojiler</li>
+            <li>Cihaz sensörleri (GPS, kamera, mikrofon)</li>
+          </ul>
+          <h3>3.3 Üçüncü Taraf Entegrasyonları</h3>
+          <ul>
+            <li>Google Maps API (konum ve harita servisleri)</li>
+            <li>Ödeme sağlayıcıları (Ozan, İyzico)</li>
+            <li>Push bildirim servisleri (Expo Push Notifications)</li>
+            <li>Google Places API (mekan bilgileri)</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section" id="isleme">
+          <h2>4. Veri İşleme Amaçları</h2>
+          <h3>4.1 Temel Hizmet Sunumu</h3>
+          <ul>
+            <li>Kullanıcı hesabı yönetimi</li>
+            <li>Uygulama işlevselliğinin sağlanması</li>
+            <li>İçerik paylaşımı ve sosyal etkileşim</li>
+            <li>Etkinlik organizasyonu ve katılım</li>
+          </ul>
+          <h3>4.2 Konum Tabanlı Hizmetler</h3>
+          <ul>
+            <li>Yakınınızdaki mekanları gösterme</li>
+            <li>Etkinlik ve fırsatların konumsal filtrelenmesi</li>
+            <li>Yol tarifi ve navigasyon hizmetleri</li>
+            <li>Bölgesel içerik önerisi</li>
+          </ul>
+          <h3>4.3 Ödeme ve Finansal İşlemler</h3>
+          <ul>
+            <li>Dijital cüzdan yönetimi</li>
+            <li>QR kod ödemeleri</li>
+            <li>İşlem güvenliği ve dolandırıcılık önleme</li>
+            <li>Finansal kayıt tutma</li>
+          </ul>
+          <h3>4.4 Kişiselleştirme</h3>
+          <ul>
+            <li>İçerik önerilerinin kişiselleştirilmesi</li>
+            <li>Kullanıcı deneyiminin iyileştirilmesi</li>
+            <li>Hedefli reklam ve promosyonlar</li>
+            <li>Antalya'ya özel içerik sunumu</li>
+          </ul>
+          <h3>4.5 İletişim ve Bilgilendirme</h3>
+          <ul>
+            <li>Push bildirimleri gönderme</li>
+            <li>Önemli duyurular ve güncellemeler</li>
+            <li>Müşteri destek hizmetleri</li>
+            <li>Pazarlama iletişimi (onay ile)</li>
+          </ul>
+          <h3>4.6 Güvenlik ve Uyumluluk</h3>
+          <ul>
+            <li>Hesap güvenliğinin sağlanması</li>
+            <li>Dolandırıcılık tespiti ve önleme</li>
+            <li>Yasal yükümlülüklerin yerine getirilmesi</li>
+            <li>Platform kurallarının uygulanması</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section" id="hukuki">
+          <h2>5. Hukuki Dayanak</h2>
+          <p>Kişisel verileriniz aşağıdaki hukuki dayanaklara göre işlenmektedir:</p>
+          <h3>5.1 KVKK Madde 5/2(a) - Açık Rıza</h3>
+          <ul>
+            <li>Pazarlama iletişimi</li>
+            <li>Konum verilerinin işlenmesi</li>
+            <li>Sosyal medya entegrasyonları</li>
+            <li>İsteğe bağlı özellikler</li>
+          </ul>
+          <h3>5.2 KVKK Madde 5/2(c) - Sözleşmenin İfası</h3>
+          <ul>
+            <li>Hesap yönetimi</li>
+            <li>Ödeme işlemleri</li>
+            <li>Etkinlik katılımları</li>
+            <li>Temel uygulama hizmetleri</li>
+          </ul>
+          <h3>5.3 KVKK Madde 5/2(f) - Meşru Menfaat</h3>
+          <ul>
+            <li>Güvenlik önlemleri</li>
+            <li>Hizmet iyileştirmeleri</li>
+            <li>Analitik ve istatistikler</li>
+            <li>Teknik destek</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section" id="paylasim">
+          <h2>6. Veri Paylaşımı</h2>
+          <h3>6.1 Üçüncü Taraf Hizmet Sağlayıcıları</h3>
+          <h3 style="font-size: 1.1rem; font-weight: 600; margin-top: 20px;">Google Services</h3>
+          <ul>
+            <li><strong>Google Maps API:</strong> Harita ve konum hizmetleri</li>
+            <li><strong>Google Places API:</strong> Mekan bilgileri</li>
+          </ul>
+          <h3 style="font-size: 1.1rem; font-weight: 600; margin-top: 20px;">Ödeme Sağlayıcıları</h3>
+          <ul>
+            <li><strong>Ozan Payment Systems:</strong> Güvenli ödeme işlemleri</li>
+          </ul>
+          <h3 style="font-size: 1.1rem; font-weight: 600; margin-top: 20px;">Bildirim Servisleri</h3>
+          <ul>
+            <li><strong>Expo Push Notifications:</strong> Kullanıcı bildirimleri</li>
+          </ul>
+          <h3 style="font-size: 1.1rem; font-weight: 600; margin-top: 20px;">Cloud Storage</h3>
+          <ul>
+            <li><strong>Amazon S3:</strong> Medya dosyalarının güvenli saklanması</li>
+          </ul>
+          <h3>6.2 Yasal Paylaşım</h3>
+          <ul>
+            <li>Yasal yükümlülükler çerçevesinde kamu kurumları</li>
+            <li>Mahkeme kararları ve adli makamlar</li>
+            <li>Düzenleyici kurumların talepleri</li>
+          </ul>
+          <h3>6.3 İş Ortakları</h3>
+          <ul>
+            <li>Antalya'daki yerel işletmeler (sadece gerekli bilgiler)</li>
+            <li>Etkinlik organizatörleri</li>
+            <li>Servis sağlayıcıları</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section" id="guvenlik">
+          <h2>7. Veri Güvenliği</h2>
+          <h3>7.1 Teknik Önlemler</h3>
+          <ul>
+            <li>SSL/TLS şifreleme protokolleri</li>
+            <li>Veritabanı şifreleme</li>
+            <li>Güvenli API iletişimi</li>
+            <li>Erişim kontrol sistemleri</li>
+          </ul>
+          <h3>7.2 İdari Önlemler</h3>
+          <ul>
+            <li>Veri erişim yetkilendirmeleri</li>
+            <li>Personel eğitimleri</li>
+            <li>Güvenlik politikaları</li>
+            <li>Düzenli güvenlik denetimleri</li>
+          </ul>
+          <h3>7.3 Fiziksel Önlemler</h3>
+          <ul>
+            <li>Güvenli veri merkezi altyapısı</li>
+            <li>Kontrollü erişim alanları</li>
+            <li>Backup ve felaket kurtarma planları</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section" id="haklar">
+          <h2>8. Haklarınız</h2>
+          <p>KVKK uyarınca sahip olduğunuz haklar:</p>
+          <h3>8.1 Bilgi Alma Hakkı</h3>
+          <ul>
+            <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+            <li>İşleme amaçlarını öğrenme</li>
+            <li>Üçüncü taraflarla paylaşım durumunu öğrenme</li>
+          </ul>
+          <h3>8.2 Düzeltme Hakkı</h3>
+          <ul>
+            <li>Yanlış verilerin düzeltilmesini isteme</li>
+            <li>Eksik verilerin tamamlanmasını isteme</li>
+          </ul>
+          <h3>8.3 Silme Hakkı</h3>
+          <ul>
+            <li>Kişisel verilerinizin silinmesini isteme</li>
+            <li>İşleme şartlarının ortadan kalkması durumunda</li>
+          </ul>
+          <h3>8.4 İşlemeye İtiraz Hakkı</h3>
+          <ul>
+            <li>Pazarlama amaçlı işlemeye itiraz</li>
+            <li>Otomatik karar verme süreçlerine itiraz</li>
+          </ul>
+          <h3>8.5 Veri Taşınabilirliği</h3>
+          <ul>
+            <li>Verilerinizi yapılandırılmış formatta alma</li>
+            <li>Başka veri sorumlusuna aktarma</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section" id="saklama">
+          <h2>9. Veri Saklama Süreleri</h2>
+          <h3>9.1 Hesap Verileri</h3>
+          <ul>
+            <li>Aktif hesap: Hesap kapatılana kadar</li>
+            <li>Kapatılan hesap: 1 yıl (yasal yükümlülükler için)</li>
+          </ul>
+          <h3>9.2 İşlem Kayıtları</h3>
+          <ul>
+            <li>Finansal işlemler: 10 yıl (vergi mevzuatı)</li>
+            <li>Ödeme kayıtları: 5 yıl</li>
+          </ul>
+          <h3>9.3 İletişim Kayıtları</h3>
+          <ul>
+            <li>Destek talepleri: 3 yıl</li>
+            <li>Pazarlama onayları: Onay iptal edilene kadar</li>
+          </ul>
+          <h3>9.4 Teknik Loglar</h3>
+          <ul>
+            <li>Güvenlik logları: 2 yıl</li>
+            <li>Uygulama kullanım logları: 1 yıl</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section" id="cerezler">
+          <h2>10. Çerezler ve Benzeri Teknolojiler</h2>
+          <h3>10.1 Kullanılan Teknolojiler</h3>
+          <ul>
+            <li>Local Storage</li>
+            <li>Session Storage</li>
+            <li>Device Identifiers</li>
+            <li>Analytics Cookies</li>
+          </ul>
+          <h3>10.2 Amaçlar</h3>
+          <ul>
+            <li>Oturum yönetimi</li>
+            <li>Kullanıcı tercihlerini hatırlama</li>
+            <li>Uygulama performansının izlenmesi</li>
+            <li>Güvenlik ve dolandırıcılık önleme</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section" id="transfer">
+          <h2>11. Uluslararası Veri Transferi</h2>
+          <p>Bazı hizmetlerimiz için verileriniz aşağıdaki ülkelere aktarılabilir:</p>
+          <h3>11.1 Aktarım Yapılan Ülkeler</h3>
+          <ul>
+            <li>Amerika Birleşik Devletleri (AWS, Google)</li>
+            <li>Avrupa Birliği ülkeleri</li>
+            <li>Yeterli koruma seviyesine sahip ülkeler</li>
+          </ul>
+          <h3>11.2 Güvenceler</h3>
+          <ul>
+            <li>Standart sözleşme maddeleri</li>
+            <li>Privacy Shield sertifikaları</li>
+            <li>GDPR uyumlu veri işleme anlaşmaları</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section" id="cocuklar">
+          <h2>12. Çocukların Gizliliği</h2>
+          <ul>
+            <li>13 yaş altı çocuklardan veri toplamamaktayız</li>
+            <li>Ebeveyn onayı olmaksızın çocuk verisi işlemiyoruz</li>
+            <li>Çocuk verisi tespit edildiğinde derhal sileriz</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section" id="degisiklik">
+          <h2>13. Politika Değişiklikleri</h2>
+          <ul>
+            <li>Politika değişiklikleri uygulama üzerinden duyurulur</li>
+            <li>Önemli değişiklikler için e-posta bildirimi gönderilir</li>
+            <li>Yeni politika 30 gün önceden yayınlanır</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section" id="iletisim">
+          <h2>14. İletişim</h2>
+          <p>Gizlilik konularında bizimle iletişime geçebilirsiniz:</p>
+          <h3>İletişim Bilgileri</h3>
+          <ul>
+            <li><strong>E-posta:</strong> digivisoragency@gmail.com</li>
+            <li><strong>Adres:</strong> Antalya, Türkiye</li>
+            <li><strong>Telefon:</strong> +90 (540) 784 56 67</li>
+          </ul>
+          <h3>Veri Koruma Sorumlusu</h3>
+          <ul>
+            <li><strong>E-posta:</strong> digivisoragency@gmail.com</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section" id="yasal">
+          <h2>15. Yasal Çerçeve</h2>
+          <p>Bu Gizlilik Politikası aşağıdaki mevzuat çerçevesinde hazırlanmıştır:</p>
+          <ul>
+            <li>6698 sayılı Kişisel Verilerin Korunması Kanunu</li>
+            <li>Kişisel Verilerin İşlenmesinde Uyulacak İlkeler Tebliği</li>
+            <li>Kişisel Verilerin Silinmesi, Yok Edilmesi veya Anonim Hale Getirilmesi Hakkında Yönetmelik</li>
+            <li>İlgili diğer mevzuat ve düzenlemeler</li>
+          </ul>
+          <div class="intro-notice" style="margin-top: 40px;">
+            Bu politika, verilerinizin korunması ve haklarınızın güvence altına alınması amacıyla düzenlenmiştir. Herhangi bir sorunuz olması durumunda yukarıdaki iletişim kanallarından bize ulaşabilirsiniz.
+            <p style="margin: 15px 0 0 0; color: #222222; font-weight: 600;">Son güncelleme: 11 Haziran 2025</p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
